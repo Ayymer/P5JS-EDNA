@@ -5,7 +5,7 @@ class Circle {
     this.x = startX;
     this.y = startY;
     this.size = 50;
-    this.color = [255, 0, 0];
+    this.color = [random(255),random (255),random (255)];
   }
 
   afficher() {
@@ -20,16 +20,18 @@ function setup() {
 
 function draw() {
   background(220);
+
   // cercle
-  fill(255, 0, 0);
 
   for (let circle of circleList) {
     circle.afficher();
   }
+}
 
-  if (mouseIsPressed == true) {
+
+function mouseIsPressed() {
     circleList.push(new Circle(mouseX, mouseY));
-    
+  }
 }
 
 
