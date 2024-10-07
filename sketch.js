@@ -8,7 +8,9 @@ class Circle {
 
   afficher() {
     fill(this.color);
+    square(this.x, this.y, this.size);
     ellipse(this.x, this.y, this.size);
+    
   }
 }
 
