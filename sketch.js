@@ -48,7 +48,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(0);
 
   for (let circle of circleList) {
     circle.affichercercle();
